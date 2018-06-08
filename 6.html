@@ -3,28 +3,28 @@
 <script>
 n = prompt('Введите число', '');
 nN= parseInt(n);
-var nArr = [];
+var nArray = [];
 for (var i = 2; i < nN;i++)
 {
-	nArr[i] = true
+	nArray[i] = true
 }
-var SVal = 2;
+var SValue = 2;
 do
 {
-	for (i=2*SVal;i<nN;i+=SVal)
+	for (i=2*SValue;i<nN;i+=SValue)
 	{
-		nArr[i] = false;
+		nArray[i] = false;
 	}
-	for (i = SVal+1; i < nN;i++)
+	for (i = SValue+1; i < nN;i++)
 	{
- 		if (nArr[i]) break;
+ 		if (nArray[i]) break;
 	}
-	SVal= i;
-} while (SVal * SVal < nN)
+	SValue= i;
+} while (SValue * SValue < nN)
 var nSum = 0;
-for (i = 0; i < nArr.length;i++)
+for (i = 0; i < nArray.length;i++)
 {
-	if (nArr[i])
+	if (nArray[i])
 	{
 		nSum += i;
 	}
