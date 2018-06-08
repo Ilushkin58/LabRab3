@@ -1,26 +1,26 @@
 <html>
 <body>
 <script>
-function Calculator()
+function Calc()
 {
-	this.read = function()
+	this.readNum = function()
 	{
 		this.Val1 = +prompt('Введите первое число', '');
 		this.Val2 = +prompt('Введите второе число', '');
 	};
-	this.sum = function()
+	this.sumNum= function()
 	{
 		return this.Val1 + this.Val2;
 	};
-	this.mul = function()
+	this.mulNum= function()
 	{
 		return this.Val1 * this.Val2;
 	};
 }
-var calculator = new Calculator();
-calculator.read();
-alert("Сумма введенных чисел: " + calculator.sum());
-alert("Произведение введенных чисел: " + calculator.mul());
+var calcul = new Calc();
+calcul.readNum();
+alert("Сумма введенных чисел: " + calcul.sumNum());
+alert("Произведение введенных чисел: " + calcul.mulNum());
 </script>
 </body>
 </html>
