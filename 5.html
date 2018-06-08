@@ -1,7 +1,7 @@
 <html>
 <body>
 <script>
-function Calculator()
+function CalcNum()
 {
 	var method =
 	{
@@ -24,19 +24,19 @@ function Calculator()
 		method[name] = func;
 	};
 }
-var calc = new Calculator;
-calc.addMethod("*", function(a, b)
+var calcNum = new CalcNum;
+calcNum.addMethod("*", function(a, b)
 {
 	return a * b;
 });
-calc.addMethod("/", function(a, b) {
+calcNum.addMethod("/", function(a, b) {
   return a / b;
 });
-calc.addMethod("**", function(a, b) {
+calcNum.addMethod("**", function(a, b) {
   return Math.pow(a, b);
 });
 
-var a = calc.calculate("6 * 5");
+var a = calcNum.calculate("6 * 5");
 alert(a);
 </script>
 </body>
