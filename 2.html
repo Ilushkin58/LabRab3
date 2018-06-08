@@ -1,7 +1,7 @@
 <html>
 <body>
 <script>
-var ladder =
+var stairs =
 {
 	step: 0,
 	up: function()
@@ -18,9 +18,14 @@ var ladder =
 	{
 		alert( this.step );
 		return this;
+	},
+	theEnd: function()
+	{
+		alert("The End");
+		return this;
 	}
 }
-ladder.up().up().down().up().down().showStep();
+stairs.up().up().down().up().down().showStep().up().up().up().showStep().theEnd();
 </script>
 </body>
 </html>
