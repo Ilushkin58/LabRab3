@@ -1,26 +1,22 @@
 <html>
-<body>
-<script>
-function Calc()
-{
-	this.readNum = function()
-	{
-		this.Val1 = +prompt('Введите первое число', '');
-		this.Val2 = +prompt('Введите второе число', '');
-	};
-	this.sumNum= function()
-	{
-		return this.Val1 + this.Val2;
-	};
-	this.mulNum= function()
-	{
-		return this.Val1 * this.Val2;
-	};
-}
-var calcul = new Calc();
-calcul.readNum();
-alert("Сумма введенных чисел: " + calcul.sumNum());
-alert("Произведение введенных чисел: " + calcul.mulNum());
-</script>
-</body>
+	<body>
+		<script>
+			function Calc() {
+				this.readNum = function() {
+					this.Val1 = +prompt('Введите первое число', '');
+					this.Val2 = +prompt('Введите второе число', '');
+				};
+				this.sumNum= function() {
+					return this.Val1 + this.Val2;
+				};
+				this.mulNum= function() {
+					return this.Val1 * this.Val2;
+				};
+			}
+			var calcul = new Calc();
+			calcul.readNum();
+			alert("Сумма введенных чисел: " + calcul.sumNum());
+			alert("Произведение введенных чисел: " + calcul.mulNum());
+		</script>
+	</body>
 </html>

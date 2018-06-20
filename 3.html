@@ -1,24 +1,21 @@
 <html>
-<body>
-<script>
-function sumNum(a)
-{
-	var nNum = a;
-	function f(b)
-	{
-		nNum += b;
-		return f;
-	}
-	f.toString = function()
-	{
-		return nNum;
-	};
-	return f;
-}
-alert( sumNum(1)(2) );
-alert( sumNum(5)(-1)(2) );
-alert( sumNum(6)(-1)(-20)(-3) );
-alert( sumNum(0)(1)(2)(33)(7)(5) );
-</script>
-</body>
+	<body>
+		<script>
+			function sumNum(a) {
+				var nNum = a;
+				function f(b) {
+					nNum += b;
+					return f;
+				}
+				f.toString = function() {
+					return nNum;
+				};
+				return f;
+			}
+			alert( sumNum(1)(2) );
+			alert( sumNum(5)(-1)(2) );
+			alert( sumNum(6)(-1)(-20)(-3) );
+			alert( sumNum(0)(1)(2)(33)(7)(5) );
+		</script>
+	</body>
 </html>

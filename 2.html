@@ -1,31 +1,26 @@
 <html>
-<body>
-<script>
-var stairs =
-{
-	step: 0,
-	up: function()
-	{
-		this.step++;
-		return this;
-	},
-	down: function()
-	{
-		this.step--;
-		return this;
-	},
-	showStep: function()
-	{
-		alert( this.step );
-		return this;
-	},
-	theEnd: function()
-	{
-		alert("The End");
-		return this;
-	}
-}
-stairs.up().up().down().up().down().showStep().up().up().up().showStep().theEnd();
-</script>
-</body>
+	<body>
+		<script>
+			var stairs = {
+				step: 0,
+				up: function() {
+						this.step++;
+						return this;
+					},
+				down: function() {
+						this.step--;
+						return this;
+					},
+				showStep: function() {
+							alert( this.step );
+							return this;
+						},
+				theEnd: function() {
+							alert("The End");
+							return this;
+						}
+			}
+			stairs.up().down().up().down().showStep().up().up().up().showStep().theEnd();
+		</script>
+	</body>
 </html>
